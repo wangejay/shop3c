@@ -82,5 +82,9 @@ if ( is_admin() && isset($_GET['activated'] ) && $pagenow == 'themes.php' ) {
    //header("Location: admin.php?page=spanel");
 }
 
+if ( !current_user_can('administrator') ) { 
+add_filter('show_admin_bar', '__return_false');
+}
+
 
 ?>
