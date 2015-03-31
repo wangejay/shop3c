@@ -90,11 +90,6 @@ if ( !current_user_can('administrator') ) {
 	display: none;
 	}</style>' ;
 }
-add_action ('admin_init','author_can_upload', 10 );
-function author_can_upload() {
-        $role =& get_role('author');
-        $role->add_cap('upload_files');
-}
 
 
 ?>
