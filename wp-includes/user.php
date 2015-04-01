@@ -2199,7 +2199,7 @@ function reset_password( $user, $new_pass ) {
 function register_new_user( $user_login, $user_email ) {
 	$errors = new WP_Error();
 
-	$sanitized_user_login = sanitize_user( $user_login );
+	
 	/**
 	 * Filter the email address of a user being registered.
 	 *
@@ -2210,6 +2210,10 @@ function register_new_user( $user_login, $user_email ) {
 	$user_email = apply_filters( 'user_registration_email', $user_email );
 
 	// Check the username
+	
+	// JW set email is account name
+	$user_login = $user_email; 
+	$sanitized_user_login = sanitize_user( $user_login );
 	if ( $sanitized_user_login == '' ) {
 		$errors->add( 'empty_username', __( '<strong>ERROR</strong>: Please enter a username.' ) );
 	} elseif ( ! validate_username( $user_login ) ) {
