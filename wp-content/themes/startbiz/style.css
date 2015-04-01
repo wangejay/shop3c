@@ -419,9 +419,10 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 			height:auto;
 			margin:0;
 		}
-	
+		/*JW customization */
 		#menu-item-461 { float:right!important;} 
 		#menu-item-471 { float:right!important;} 
+		#branding{ margin:100px !important;}
 			#main-nav  ul ul li:first-child ,#main-nav ul li.current-menu-item ul li:first-child,
 			#main-nav ul li.current-menu-parent ul li:first-child,#main-nav ul li.current-page-ancestor ul li:first-child { border-top:0 none !important;}
 		#main-nav  ul ul ul ,#main-nav  ul li.current-menu-item ul ul,	#main-nav  ul li.current-menu-parent ul ul,	#main-nav  ul li.current-page-ancestor ul ul{right: auto;left: 100%;	top: 0 !important;	z-index: 99999;	}
