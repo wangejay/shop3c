@@ -316,7 +316,7 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 .header-content{
 	
 }
-	.logo {float: left;}
+	.logo {float: left; margin-left:15px}
 	.logo img{ max-width:100%;}
 	.logo h1, .logo h2{font:bold 32pt Ubuntu, "微軟正黑體", "Microsoft JhengHei", "Helvetica", Helvetica, "Helvetica Neue", sans-serif;}
 	.logo strong{ display:none;}
