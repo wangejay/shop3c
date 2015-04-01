@@ -255,6 +255,7 @@ header#theme-header:after, #signup_form:after, #buddypress:after, #main-nav:afte
 	overflow: hidden;
 	float:right;
 	margin-left:5px;
+	margin-top:45px;
 	position: relative;}
 	.search-block:after{content: " ";display: block;width: 0;height: 0;position: absolute;top: 10px;z-index: 2;right:30px;border: 4px solid transparent;border-right-color: #555 ;}
 	.search-block #s {

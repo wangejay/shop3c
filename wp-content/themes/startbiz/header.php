@@ -61,6 +61,13 @@
 			<?php endif; ?>
 		
 		<div class="header-content">
+			<div class="search-block">
+				<form method="get" id="searchform-header" action="<?php echo home_url(); ?>/">
+					<button class="search-button" type="submit" value="<?php if( !$is_IE ) "搜尋" ?>"></button>
+					<input type="text" id="s" name="s" value="搜尋..." onfocus="if (this.value == '搜尋...') {this.value = '';}" onblur="if (this.value == '') {this.value = '搜尋';}" />
+				</form>
+			</div><!-- end .search-block /-->
+		
 <?php if( is_category() || is_single() ){
 	if( is_category() ) $category_id = get_query_var('cat');
 	if( is_single() ){
