@@ -872,7 +872,7 @@ default:
 ?>
 
 <form name="loginform" id="loginform" action="<?php echo esc_url( site_url( 'wp-login.php', 'login_post' ) ); ?>" method="post">
-	<div style="width:200px;height:20px;position:relative;top:210px;background-color:#fff;z-index:99"> </div>
+	<div style="width:200px; height:20px;position:relative;top:220px;background-color:#fff;z-index:99"> </div>
 
 	<p>
 		<label for="user_login"><?php _e('Username') ?><br />
