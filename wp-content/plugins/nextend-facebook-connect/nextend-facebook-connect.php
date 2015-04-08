@@ -24,6 +24,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
+header("Content-Type:text/html; charset=utf-8");
 global $new_fb_settings;
 define('NEW_FB_LOGIN', 1);
 if (!defined('NEW_FB_LOGIN_PLUGIN_BASENAME')) define('NEW_FB_LOGIN_PLUGIN_BASENAME', plugin_basename(__FILE__));
@@ -354,7 +355,7 @@ function new_add_fb_login_form() {
         var loginForm = $('#loginform,#registerform,#front-login-form');
         socialLogins = $('<div class="newsociallogins" style="text-align:left;border-bottom: 1px solid #e8f0f7;padding-bottom: 5px;"><div style="clear:both;"></div></div>');
         if(loginForm.find('input').length > 0)
-          loginForm.prepend("<h3 style='text-align:center; padding-top: 10px'>使用本站帳號登入</h3>");
+          loginForm.prepend("<h3 style='text-align:left; padding-top: 10px'>使用本站帳號登入</h3>");
         loginForm.prepend(socialLogins);
         socialLogins = loginForm.find('.newsociallogins');
       }
