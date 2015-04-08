@@ -1,3 +1,7 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
 <?php
 
 /*
@@ -24,7 +28,6 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-header("Content-Type:text/html; charset=utf-8");
 global $new_fb_settings;
 define('NEW_FB_LOGIN', 1);
 if (!defined('NEW_FB_LOGIN_PLUGIN_BASENAME')) define('NEW_FB_LOGIN_PLUGIN_BASENAME', plugin_basename(__FILE__));
