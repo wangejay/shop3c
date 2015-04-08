@@ -1,6 +1,3 @@
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-</head>
 
 <?php
 
@@ -358,7 +355,7 @@ function new_add_fb_login_form() {
         var loginForm = $('#loginform,#registerform,#front-login-form');
         socialLogins = $('<div class="newsociallogins" style="text-align:left;border-bottom: 1px solid #e8f0f7;padding-bottom: 5px;"><div style="clear:both;"></div></div>');
         if(loginForm.find('input').length > 0)
-          loginForm.prepend("<h3 style='text-align:left; padding-top: 10px'>¨Ï¥Î¥»¯¸±b¸¹µn¤J</h3>");
+          loginForm.prepend("<h3 style='text-align:left; padding-top: 10px'>ä½¿ç”¨æœ¬ç«™å¸³è™Ÿç™»å…¥</h3>");
         loginForm.prepend(socialLogins);
         socialLogins = loginForm.find('.newsociallogins');
       }
