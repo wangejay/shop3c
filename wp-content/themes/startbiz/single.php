@@ -84,7 +84,7 @@ get_header(); ?>
 			else stf_banner('banner_below' , '<div class="ads-post">' , '</div>' );
 		}
 		?>
-		<?php the_views(); ?>
+		
 		<?php if( ( stf_get_option( 'post_authorbio' ) && empty( $get_meta["stf_hide_author"][0] ) ) || ( isset( $get_meta["stf_hide_related"][0] ) && $get_meta["stf_hide_author"][0] == 'no' ) ): ?>		
 		<section id="author-box">
 			<div class="block-head">
