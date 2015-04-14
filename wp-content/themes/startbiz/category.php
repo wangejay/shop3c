@@ -12,6 +12,26 @@
 get_header(); ?>
 	<div class="content">
 	<?php stf_breadcrumbs() ?>
+		
+		<!-- JW add slider in cat page --> 
+		<?php  
+		switch (single_cat_title( '', false )){
+			case '科技':
+				get_template_part('includes/slider_tech');
+			break; 
+			case '品牌':
+				get_template_part('includes/slider_brand');
+			break; 
+			case '趣味':
+				get_template_part('includes/slider_fun');
+			break; 
+			case '生活':
+				get_template_part('includes/slider_life');
+			break; 
+			default:
+		}
+		?>
+		
 		<?php $category_id = get_query_var('cat') ; ?>
 		<div class="page-head">
 			<h1 class="page-title">

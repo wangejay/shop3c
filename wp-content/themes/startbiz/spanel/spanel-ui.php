@@ -735,7 +735,26 @@ $save='
 						array(	"name" => "啟用",
 								"id" => "slider",
 								"type" => "checkbox")); 
-		
+					//JW 加上分類內的選單
+					stf_options( 
+						array(	"name" => "針對品牌類別啟用", 
+								"id" => "slider_brand",
+								"type" => "checkbox")); 
+					stf_options( 
+						array(	"name" => "針對科技類別啟用", 
+								"id" => "slider_tech",
+								"type" => "checkbox")); 
+					stf_options( 
+						array(	"name" => "針對生活類別啟用", 
+								"id" => "slider_life",
+								"type" => "checkbox")); 
+					stf_options( 
+						array(	"name" => "針對趣味類別啟用", 
+								"id" => "slider_fun",
+								"type" => "checkbox")); 
+					//JW 加上分類內的選單
+					
+					
 					stf_options(
 						array(	"name" => "幻燈片輪播樣式類型",
 								"id" => "slider_type",
@@ -870,7 +889,29 @@ $save='
 													"page"=>"選定的分頁" ,
 													"custom"=>"自定義幻燈片" ),
 								"type" => "radio")); 
-								
+					//JW add UI for slider settings
+					stf_options(
+						array(	"name" => "針對品牌類別幻燈片文章類型",
+								"id" => "slider_brand_query",
+								"options" => array( "custom"=>"自定義幻燈片" ),
+								"type" => "radio")); 
+					stf_options(
+						array(	"name" => "針對科技類別幻燈片文章類型",
+								"id" => "slider_tech_query",
+								"options" => array( "custom"=>"自定義幻燈片" ),
+								"type" => "radio")); 
+					stf_options(
+						array(	"name" => "針對生活類別幻燈片文章類型",
+								"id" => "slider_life_query",
+								"options" => array( "custom"=>"自定義幻燈片" ),
+								"type" => "radio")); 
+					stf_options(
+						array(	"name" => "針對趣味類別幻燈片文章類型",
+								"id" => "slider_fun_query",
+								"options" => array( "custom"=>"自定義幻燈片" ),
+								"type" => "radio")); 
+					//JW add UI for slider settings
+					
 					stf_options(
 						array(	"name" => "標籤",
 								"help" => "請輸入一個標籤名稱, 或以半形逗點分隔多個標籤名稱。",
@@ -906,6 +947,31 @@ $save='
 						array(	"name" => "自定義幻燈片",
 								"help" => "選擇自定義幻燈片",
 								"id" => "slider_custom",
+								"type" => "select",
+								"options" => $sliders));
+					// JW 選擇自定義幻燈片
+					stf_options(
+						array(	"name" => "針對品牌類別選擇自定義幻燈片",
+								"help" => "選擇自定義幻燈片",
+								"id" => "slider_tech_custom",
+								"type" => "select",
+								"options" => $sliders));
+					stf_options(
+						array(	"name" => "針對科技類別選擇自定義幻燈片",
+								"help" => "選擇自定義幻燈片",
+								"id" => "slider_tech_custom",
+								"type" => "select",
+								"options" => $sliders));
+					stf_options(
+						array(	"name" => "針對生活類別選擇自定義幻燈片",
+								"help" => "選擇自定義幻燈片",
+								"id" => "slider_life_custom",
+								"type" => "select",
+								"options" => $sliders));
+					stf_options(
+						array(	"name" => "針對趣味類別選擇自定義幻燈片",
+								"help" => "選擇自定義幻燈片",
+								"id" => "slider_fun_custom",
 								"type" => "select",
 								"options" => $sliders));
 			?>
