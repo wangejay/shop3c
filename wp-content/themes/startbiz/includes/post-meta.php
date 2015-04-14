@@ -22,8 +22,8 @@ if( ( stf_get_option( 'post_meta' ) && empty( $get_meta["stf_hide_meta"][0] ) ) 
 	<span>文章目錄 <?php printf('%1$s', get_the_category_list( ', ' ) ); ?></span>
 <?php endif; ?>	
 <?php if( stf_get_option( 'post_comments' ) ): ?>
-	<span><?php comments_popup_link( '發表留', '1 則留言', '% 則留言'); ?></span>
-	<span><?php the_views(); ?></span>
+	<span><?php comments_popup_link( '發表留言', '1 則留言', '% 則留言'); ?></span>
+	<span><?php the_views(); ?></span>  
 <?php endif; ?>
 </p>
 <div class="clear"></div>

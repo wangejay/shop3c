@@ -26,4 +26,5 @@ $get_meta = get_post_custom($post->ID);
 <?php if( stf_get_option( 'arc_meta_comments' ) ): ?>
 	<span><?php comments_popup_link( '發表留言', '1 則留言', '% 則留言' ); ?></span>
 <?php endif; ?>
+	<span><?php the_views(); ?></span>  
 </p>
