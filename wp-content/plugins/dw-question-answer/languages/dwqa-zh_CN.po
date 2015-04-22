@@ -1026,7 +1026,7 @@ msgstr "存档页面显示最多"
 
 #: ../inc/settings.php:683
 msgid "Ask Question Page"
-msgstr "提出问题页"
+msgstr "提出问题页22"
 
 #: ../inc/settings.php:690
 msgid "Private Question"
