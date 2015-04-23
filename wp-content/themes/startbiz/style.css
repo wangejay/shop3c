@@ -649,6 +649,7 @@ header#theme-header.center-logo .logo, header#theme-header.center-logo .ads-top{
 
 .full-width{background-image: none;	}
 .content {float: left;width: 660px;}
+.content_single_qna {float: left;width: 1000px;}
 #crumbs { margin-bottom:10px; clear:both; padding-bottom: 5px; border-bottom: 1px solid #DDD;}
 div.not-found{padding:20px;}
 .full-width .content , body.error404 .content{	width:auto;	float:none;}

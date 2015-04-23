@@ -11,7 +11,8 @@
 */
 get_header(); ?>
 
-	<div class="content">
+
+	<div class="content_single_qna">
 		<?php stf_breadcrumbs() ?>
 		
 	
@@ -112,5 +113,4 @@ get_header(); ?>
 	
 	</div><!-- .content -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

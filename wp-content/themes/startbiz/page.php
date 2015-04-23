@@ -10,7 +10,10 @@
 * @link		 http://startpress.cc
 */
 get_header(); ?>
-	<div class="content">
+	
+	
+		<div class="content_single_qna">
+	
 		<?php stf_breadcrumbs() ?>
 		
 		<?php if ( ! have_posts() ) : ?>
