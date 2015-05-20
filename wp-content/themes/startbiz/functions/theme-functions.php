@@ -654,15 +654,17 @@ function stf_show_extra_profile_fields( $user ) { ?>
 				<input type="text" name="pinterest" id="pinterest" value="<?php echo esc_attr( get_the_author_meta( 'pinterest', $user->ID ) ); ?>" class="regular-text" /><br />
 			</td>
 		</tr>
-		<tr>
-			<th><label for="instagram">Instagram 網址</label></th>
-			<td>
-				<input type="text" name="instagram" id="instagram" value="<?php echo esc_attr( get_the_author_meta( 'instagram', $user->ID ) ); ?>" class="regular-text" /><br />
-			</td>
-		</tr>
 
 	</table>
 <?php }
+
+## [JW] remove admin_color_scheme 
+function admin_color_scheme() {
+   global $_wp_admin_css_colors;
+   $_wp_admin_css_colors = 0;
+}
+add_action('admin_head', 'admin_color_scheme');
+
 
 ## 儲存使用者的社交網站帳號
 add_action( 'personal_options_update', 'stf_save_extra_profile_fields' );
