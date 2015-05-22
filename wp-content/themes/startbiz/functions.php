@@ -59,14 +59,15 @@ if (is_admin()) {
 
 
 function do_adsense() {
-  $adsense = "<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			  <ins class="adsbygoogle"
-			  style="display:inline-block;width:300px;height:250px"
-			  data-ad-client="ca-pub-1136960231422726"
-			  data-ad-slot="6959706099"></ins>
-			  <script>
-			  (adsbygoogle = window.adsbygoogle || []).push({});
-			  </script>";
+  $adsense = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- bjd右方 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-1136960231422726"
+     data-ad-slot="6959706099"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>';
   return $adsense;
 }
 add_shortcode('adsense', 'do_adsense'); 
