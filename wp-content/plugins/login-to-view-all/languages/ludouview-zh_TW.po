@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Login to view all\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-05-28 09:52+0800\n"
-"PO-Revision-Date: 2015-05-26 15:43+0800\n"
+"PO-Revision-Date: 2015-05-26 15:48+0800\n"
 "Last-Translator: lenglong <ourwindow@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -26,7 +26,7 @@ msgstr "登入"
 
 #: login-to-view-all.php:30
 msgid " to view the hidden contents."
-msgstr "後才能浏覽,歡迎加入會員!"
+msgstr "後才能申請,歡迎加入會員!                                       "
 
 #~ msgid "<div style=\"text-align:center;border:1px dashed #FF9A9A;padding:8px;margin:10px auto;color:#FF6666;\">You must be <a href=\""
 #~ msgstr "<div style=\"text-align:center;border:1px dashed #FF9A9A;padding:8px;margin:10px auto;color:#FF6666;\">本文隐藏的内容<a href=\""
